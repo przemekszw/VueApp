@@ -1,26 +1,32 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="bg-light">
+    <BMICalculator />
+    <CaloricNeedsCalculator />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BMICalculator from './components/KalkulatorBMI.vue';
+import CaloricNeedsCalculator from './components/KalkulatorZAP.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    BMICalculator,
+    CaloricNeedsCalculator,
+  },
+};
 </script>
 
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
 }
 </style>
